@@ -12,15 +12,16 @@
     flex-direction: column;
     width: 15%;
     height: 100%;
-    background-color: lightgray;
+    background-color: white;
+    border-right: #8143AF 1px solid;
     padding: 20px;
   }
 
   .container {
     display: flex;
     height: 100%;
-    width: 85%;
-    color: #dfc4f4
+    width: 100%;
+    background-color: #e3d1f0;
   }
 
   img {
@@ -67,4 +68,49 @@
     font-weight: bold;
     padding: 20px;
     color: #8143AF;
+  }
+
+  h2{
+    font-size: 23px;
+    font-weight: bold;
+    color: black
+  }
+
+  .form-control{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .form-control label{
+    font-size: 18px;
+    color: black;
+  }
+
+  .form-control select{
+    font-size: 15px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  button {
+    transition: background-color ease-in-out .3s;
+    background-color: #8143AF;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    align-self: center;
+  }
+
+  button:hover {
+    background-color: #430a6f;
   }

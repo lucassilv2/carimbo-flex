@@ -17,14 +17,20 @@
   <main>
     <aside>
       <div>
-        <button onclick="addCarimbo()">Adicionar Carimbo</button>
+        <button onclick="addCarimbo()">
+          <i class="fa-solid fa-plus"></i>
+          | Adicionar Carimbo
+        </button>
       </div>
       <div>
-        <button onclick="removeCarimbo()">Remover Carimbo</button>
+        <button onclick="removeCarimbo()">
+          <i class="fa-solid fa-minus"></i>
+          | Remover Carimbo
+        </button>
       </div>
-      Configurações:
-      <div>
-        <label>Flex-direction:</label>
+      <h2>Configurações:<h2>
+      <div class="form-control">
+        <label>Flex Direction:</label>
         <select id="flex-direction" onchange="styleChange('flex-direction', this.value)">
           <option value="none">none</option>
           <option value="row">row</option>
@@ -33,8 +39,8 @@
           <option value="column-reverse">column-reverse</option>
         </select>
       </div>
-      <div>
-        <label>Flex-wrap:</label>
+      <div class="form-control">
+        <label>Flex Wrap:</label>
         <select id="flex-wrap" onchange="styleChange('flex-wrap', this.value)">
           <option value="none">none</option>
           <option value="nowrap">nowrap</option>
@@ -42,8 +48,8 @@
           <option value="wrap-reverse">wrap-reverse</option>
         </select>
       </div>
-      <div>
-        <label>Justify-content:</label>
+      <div class="form-control">
+        <label>Justify Content:</label>
         <select id="justify-content" onchange="styleChange('justify-content', this.value)">
           <option value="none">none</option>
           <option value="flex-start">flex-start</option>
@@ -54,8 +60,8 @@
           <option value="space-evenly">space-evenly</option>
         </select>
       </div>
-      <div>
-        <label>Align-items:</label>
+      <div class="form-control">
+        <label>Align Items:</label>
         <select id="align-items" onchange="styleChange('align-items', this.value)">
           <option value="none">none</option>
           <option value="flex-start">flex-start</option>
@@ -65,8 +71,8 @@
           <option value="stretch">stretch</option>
         </select>
       </div>
-      <div>
-        <label>Align-content:</label>
+      <div class="form-control">
+        <label>Align Content:</label>
         <select id="align-content" onchange="styleChange('align-content', this.value)">
           <option value="none">none</option>
           <option value="flex-start">flex-start</option>
