@@ -1,5 +1,25 @@
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="language" content="pt-BR">
+  <title>Carimbo Flex</title>
+  <meta name="description" content="Um estudo sobre flex">
+  <meta name="robots" content="index">
+  <meta name="author" content="Lucas Souza da Silva">
+  <meta name="keywords" content="Seguro viagem, Flex, CSS, HTML, JS">
+
+  <meta property="og:type" content="page">
+  <meta property="og:url" content="https://lucassilv2.github.io/carimbo-flex/">
+  <meta property="og:title" content="Carimbo Flex">
+  <meta property="og:image" content="./carimbo.jpg">
+  <meta property="og:description" content="Um estudo sobre flex">
+
+  <meta property="article:author" content="Lucas Souza da Silva">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Carimbo Flex">
+  <meta name="twitter:description" content="Um estudo sobre flex">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="script.js"></script>
@@ -29,70 +49,70 @@
         </button>
       </div>
       <h2>Configurações:<h2>
-      <div class="form-control">
-        <label>Flex Direction:</label>
-        <select id="flex-direction" onchange="styleChange('flex-direction', this.value)">
-          <option value="none">none</option>
-          <option value="row">row</option>
-          <option value="row-reverse">row-reverse</option>
-          <option value="column">column</option>
-          <option value="column-reverse">column-reverse</option>
-        </select>
+        <div class="form-control">
+          <label>Flex Direction:</label>
+          <select id="flex-direction" onchange="styleChange('flex-direction', this.value)">
+            <option value="none">none</option>
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label>Flex Wrap:</label>
+          <select id="flex-wrap" onchange="styleChange('flex-wrap', this.value)">
+            <option value="none">none</option>
+            <option value="nowrap">nowrap</option>
+            <option value="wrap">wrap</option>
+            <option value="wrap-reverse">wrap-reverse</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label>Justify Content:</label>
+          <select id="justify-content" onchange="styleChange('justify-content', this.value)">
+            <option value="none">none</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label>Align Items:</label>
+          <select id="align-items" onchange="styleChange('align-items', this.value)">
+            <option value="none">none</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label>Align Content:</label>
+          <select id="align-content" onchange="styleChange('align-content', this.value)">
+            <option value="none">none</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </div>
+      </aside>
+      <div id="carimbos" class="container">
+        <img src="./carimbo.jpg" alt="Carimbo!">
+        <img src="./carimbo.jpg" alt="Carimbo!">
+        <img src="./carimbo.jpg" alt="Carimbo!">
       </div>
-      <div class="form-control">
-        <label>Flex Wrap:</label>
-        <select id="flex-wrap" onchange="styleChange('flex-wrap', this.value)">
-          <option value="none">none</option>
-          <option value="nowrap">nowrap</option>
-          <option value="wrap">wrap</option>
-          <option value="wrap-reverse">wrap-reverse</option>
-        </select>
-      </div>
-      <div class="form-control">
-        <label>Justify Content:</label>
-        <select id="justify-content" onchange="styleChange('justify-content', this.value)">
-          <option value="none">none</option>
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="space-between">space-between</option>
-          <option value="space-around">space-around</option>
-          <option value="space-evenly">space-evenly</option>
-        </select>
-      </div>
-      <div class="form-control">
-        <label>Align Items:</label>
-        <select id="align-items" onchange="styleChange('align-items', this.value)">
-          <option value="none">none</option>
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="baseline">baseline</option>
-          <option value="stretch">stretch</option>
-        </select>
-      </div>
-      <div class="form-control">
-        <label>Align Content:</label>
-        <select id="align-content" onchange="styleChange('align-content', this.value)">
-          <option value="none">none</option>
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="space-between">space-between</option>
-          <option value="space-around">space-around</option>
-          <option value="stretch">stretch</option>
-        </select>
-      </div>
-    </aside>
-    <div id="carimbos" class="container">
-      <img src="./carimbo.jpg" alt="Carimbo!">
-      <img src="./carimbo.jpg" alt="Carimbo!">
-      <img src="./carimbo.jpg" alt="Carimbo!">
-    </div>
 
-    <footer>
-      <p>Insentivado e idealizado por  <a href="https://www.seguroviagem.srv.br/">Real Seguro Viagem</a>. 💜</p>
-    </footer>
-  </main>
-</body>
-</html>
+      <footer>
+        <p>Insentivado e idealizado por  <a href="https://www.seguroviagem.srv.br/">Real Seguro Viagem</a>. 💜</p>
+      </footer>
+    </main>
+  </body>
+  </html>
